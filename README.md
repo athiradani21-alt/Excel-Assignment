@@ -22,38 +22,43 @@ This Dataset Consist of
   * *Formula:* `=COUNTA(D2:D35)
 * **Average Price:** Computes the average price across all products.
   * *Formula:* `=AVERAGE(D2:D35)
+  * * Use the fill function to fill the column
 
 ---
 
 ### 2) Min and Max
 * **Minimum Price:** Finds the lowest-priced product in the dataset.
   * *Formula:* `=MIN(D2:D35)
+  * * Use the fill function to fill the column.
 * **Maximum Price:** Finds the highest-priced product in the dataset.
   * *Formula:* `=MAX(D2:D35)
+  * * Use the fill function to fill the column.
 
 ### 3) IF Function (`Price Range` Column)
 Categorizes products based on their price: products priced at **$500 or higher** are labeled as `'High Price'`, while everything else is marked as `'Standard Price'`.
-* *Formula:* 
-  ```excel
-  =IF(Cell>=500, "High Price", "Standard Price")
+* *Formula:* =IF(D2>=500,"High Price","Standard Price")
+* * Use the fill function to fill the column
 
 ---
 
 ## 4) SUMIF and COUNTIF
 * **Total Price for 'Electronics':** Sums the price of products belonging specifically to the 'Electronics' category.
-  * *Formula:* `=SUMIF(Category_Range, "Electronics", Price_Range)`
+  * *Formula:* =SUMIF(F2:F35,F2,D2:D35)
 * **Count of Products under $100:** Counts how many products have a price lower than $100.
-  * *Formula:* `=COUNTIF(Price_Range, "<100")`
+  * *Formula:* =COUNTIF(D2:D35,"<100")
+  * * Use the fill function to fill the column.
 
 ---
 
 ## 5) Text Formatting (`LEFT`, `RIGHT`, `MID`)
 Extracts specific sub-strings from the `'Product ID'` column into new columns:
 * **Day (First 2 characters):** Extracts the first 2 characters from the Product ID to create the `Day` column.
-  * *Formula:* `=LEFT(ProductID_Cell, 2)`
+  * *Formula:* =LEFT(A2,2)
+  * Use the fill function to fill the column.
 * **Country Code (Last 2 characters):** Extracts the last 2 characters from the Product ID to create the `Country Code` column.
-  * *Formula:* `=RIGHT(ProductID_Cell, 2)`
+  * *Formula:* =RIGHT(A2,2)
+  * * Use the fill function to fill the column.
 * **Month (4th to 6th characters):** Extracts 3 characters starting from the 4th character position of the Product ID to create the `Month` column.
-  * *Formula:* `=MID(ProductID_Cell, 4, 3)`
-  * 
+  * *Formula:* `=MID(A2,4,3)
+  * * Use the fill function to fill the column.
   
