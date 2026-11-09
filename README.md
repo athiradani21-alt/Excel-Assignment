@@ -6,7 +6,7 @@ This repository contains my solution for my Assignment 1 -Data Exploration
 ## Objective
 The Primary Aim of this Assignment is to transform the into a accurate data by cleaning,analysing.Moreover to extract insights from a raw data using arithametic and statiscal function like SUM,AVERAGE ,COUNT,COUNTIF, SUMIF,MIN, MAX,LEFT RIGHT AND MID
 
-##Dataset Overview
+Dataset Overview
 This Dataset Consist of 
 * **Product ID**
 * **Category** 
@@ -17,19 +17,19 @@ This Dataset Consist of
 
 ### 1) Sum, Count, Average
 * **Total Price of all products:** Calculates the overall sum of the price column.
-  * *Formula:* `=SUM(Range)`
+  * *Formula:* `=SUM(D2:D35)
 * **Total Product Count:** Counts the total number of items/rows in the dataset.
-  * *Formula:* `=COUNTA(Range)`
+  * *Formula:* `=COUNTA(D2:D35)
 * **Average Price:** Computes the average price across all products.
-  * *Formula:* `=AVERAGE(Range)`
+  * *Formula:* `=AVERAGE(D2:D35)
 
 ---
 
 ### 2) Min and Max
 * **Minimum Price:** Finds the lowest-priced product in the dataset.
-  * *Formula:* `=MIN(Range)`
+  * *Formula:* `=MIN(D2:D35)
 * **Maximum Price:** Finds the highest-priced product in the dataset.
-  * *Formula:* `=MAX(Range)`
+  * *Formula:* `=MAX(D2:D35)
 
 ### 3) IF Function (`Price Range` Column)
 Categorizes products based on their price: products priced at **$500 or higher** are labeled as `'High Price'`, while everything else is marked as `'Standard Price'`.
